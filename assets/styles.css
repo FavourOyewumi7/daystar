@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
     
 }
+
 /*
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Dancing Script', cursive;
@@ -17,14 +19,14 @@ body{
 }
 /* header part*/
 header{
-    background-image: url('./aaron-burden-TNlHf4m4gpI-unsplash.jpg');
+    background-image: url('./joel-muniz-XqXJJhK-c08-unsplash.jpg');
     background-repeat: no-repeat;
     background-position:center;
     height: 100vh;
     width: 100vw;
     color: white;
     position: relative;
-    margin-bottom: 70px;
+   
     background-attachment: fixed;
 }
 .navbar{
@@ -46,9 +48,10 @@ header{
     position: fixed;
     z-index: 10000;
     width: 100vw;
-    background-color: yellow;
-    color: black;
-    box-shadow: 2px #ccc;
+    background-color: white;
+    color: black !important;
+    box-shadow: 2px 2px 2px #ccc;
+    transition: 0.5s;
 }
 
 .nav-logo img{
@@ -89,57 +92,75 @@ header{
 .li1{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li1:hover{
     font-size: larger;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.973);
-    color: rgba(255, 0, 0, 0.973);
-    transition: 0.5s;
+    border-bottom: 2px solid  #f8faff;
+    
+    transition: 0.3s ease-in;
     
 }
 .li2{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li2:hover{
     font-size: larger;
     border-bottom: 2px solid rgba(7, 201, 7, 0.973);
-    color: rgba(7, 201, 7, 0.973);
-    transition: 0.5s;
+    
+    transition: 0.3s ease-in;
 }
 .li3{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li3:hover{
     font-size: larger;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.973);
-    color: rgba(255, 0, 0, 0.973);
-    transition: 0.5s;
+    border-bottom: 2px solid #4d4d4d;
+    
+    transition: 0.3s ease-in;
 }
 .li4{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li4:hover{
     font-size: larger;
     border-bottom: 2px solid rgba(0, 0, 255, 0.973);
-    color: rgba(0, 0, 255, 0.973);
-    transition: 0.5s;
+    
+    transition: 0.3s ease-in;
 }
 .li5{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li5:hover{
     font-size: larger;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.973);
-    color: rgba(255, 0, 0, 0.973);
-    transition: 0.5s;
+    border-bottom: 2px solid #272e4f;
+    
+    transition: 0.3s ease-in;
 }
 .li6{
     color: white;
 }
+.ant{
+    color: #4d4d4d;
+}
 .li6:hover{
     font-size: larger;
-    border-bottom: 2px solid white;
-    color: white;
-    transition: 0.5s;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.973);
+    
+    transition: 0.5s ease-in;
 }
 .text{
     position: absolute;
@@ -157,12 +178,20 @@ header{
     transform: translate(-50%, -50%);
     text-align:center;
     font-family: 'Comfortaa', cursive;
+    transition: 0.3s;
+}
+.text1:hover{
+    
+    cursor: pointer;
 }
 
 /*about us*/
 #about{
-    margin:7% 10%;
+    margin:0 5%;
     font-family: 'Tajawal', sans-serif;
+    background-color: #f8f9fa;
+    height: 550px;
+    text-align: justify;
     
 }
 .about{
@@ -170,10 +199,12 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     padding-top: 30px;
+    padding-top:12% ;
+    margin: 0% 5%;
     
 }
 #about h1{
-    border-bottom: 5px solid rgb(0,0,255, 0.8);
+    
     font-size: larger;
     text-align: center;
     
@@ -182,16 +213,43 @@ header{
 /* gallery section*/
 
 #gallery{
-    margin: 8%;
+    margin-top: 8% ;
+    
     font-family: 'Tajawal', sans-serif;
     align-content: center;
-    background-image: url('./6906537_preview.png');
+    background-color: #f8faff;
     background-repeat: none;
     background-attachment: fixed;
     background-position: center;
     height: 770px;
     position: relative;
+    color: #4d4d4d;
     
+}
+
+.arrow-left{
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.2s;
+}
+.arrow-left:hover{
+    transform: scale(0.9);
+    color: rgba(255, 0, 0, 0.8);
+}
+.arrow-right:hover{
+    transform: scale(0.9);
+    color: rgba(0, 0, 255, 0.973);
+}
+.arrow-right{
+    top: 50%;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.2s;
 }
 
 
@@ -199,40 +257,50 @@ header{
   /*  border-bottom:5px solid  rgba(7, 201, 7, 0.973);*/
     
     padding-top: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     text-align: center;
     
 }
 .gallery{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2,300px);
-    grid-row-gap: 4px;
-    grid-column-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4%;
+    grid-column-gap: 2%;
+}
+.cards img{
+    height: 120px;
+    width: 120px;
+    margin: 9%;
+    border-radius: 50%;
+   
+    
+}
+.p{
+    margin-left: 9%;
+    margin-right:9%;
+    margin-bottom: 10%;
+    
 }
 .cards{
-    width: 200px;
-    height: 250px;
+    background-color: white;
+    box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    height: 500px;
+    text-align: center;
+    transition: 0.3s;
     
-    border-radius: 8px;
-    box-shadow:2px 2px  #ccc;
+  
     
 
 }
 .cards:hover{
-    animation: example 5s ;
+  transform: scale(1.1);
 }
-.cards img{
-    width: 200px;
-    height: 250px;
-    image-rendering: optimizeQuality;
-    background-position: center;
-}
+
 
 /* contact*/
 
 #contact{
-    margin: 5% 2%;
+    margin: 0;
     padding-top: 3%;
     text-align: center;
     font-family: 'Tajawal', sans-serif;
@@ -263,6 +331,8 @@ header{
 }
 .contact input::placeholder{
     text-align: center;
+    color: #4d4d4d;
+    opacity: 0.4;
     
 }
 
@@ -274,7 +344,13 @@ header{
     border: none;
     border-radius: 10px;
     font-family: 'Source Code Pro', monospace;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
 
+}
+.contact button:hover{
+    transform: scale(0.9);
 }
 /*service*/
 
@@ -300,6 +376,10 @@ header{
 .card{
     text-align: center;
 }
+.card p{
+    color: #4d4d4d;
+    opacity: 0.7;
+}
 
 
 
@@ -319,12 +399,12 @@ header{
 
 /*footer*/
 footer{
-    background-color: rgba(7, 201, 7, 0.973) ;
+    background-color:#272e4f ;
     padding: 5% 10%;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    padding-top: 50px;
-    height: 350px;
+    padding-top: 100px;
+    height: 270px;
     font-family: 'Tajawal', sans-serif;
    
     background-attachment: fixed;
@@ -341,6 +421,9 @@ footer{
 }
 .footer-quick a{
     text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+}
+.footer-quick a:hover{
     color: white;
 }
 .footer-quick li{
@@ -354,6 +437,9 @@ footer{
 }
 .footer-con a{
     text-decoration: none;
-    color: white;
+    color:rgba(255, 255, 255, 0.7);
     padding-right: 20px;
+}
+.footer-con a:hover{
+    color: white;
 }

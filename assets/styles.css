@@ -335,6 +335,15 @@ header{
     opacity: 0.4;
     
 }
+.name {
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+.message {
+    text-align: center;
+}
 
 .contact button{
     background-color: rgba(255, 0, 0, 0.973);

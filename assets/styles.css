@@ -41,8 +41,16 @@ header{
     z-index: 10000;
     width: 100vw;
     height: 7vw;
+    
 }
 
+
+
+.nav-logo img{
+    height: 70px;
+    width: 70px;
+    padding-top: 10px;
+}
 .active{
     display: inline-block;
     position: fixed;
@@ -53,13 +61,6 @@ header{
     box-shadow: 2px 2px 2px #ccc;
     transition: 0.5s;
 }
-
-.nav-logo img{
-    height: 70px;
-    width: 70px;
-    padding-top: 10px;
-}
-
 .nav-logo{
     position: absolute;
     left: 10%;

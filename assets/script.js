@@ -15,7 +15,7 @@ window.onscroll = function(){
    var top = window.scrollY;
    
 
-   if(top >= 600){
+   if(top >=50){
       tip.classList.add("active");
       q.classList.add('ant');
       w.classList.add('ant');
